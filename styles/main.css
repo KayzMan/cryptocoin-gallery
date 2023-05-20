@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(to left, #eee, white, #eee);
+}
+
+.app-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+.branding {
+    color: #000;
+    /* color: orangered; */
+    text-decoration: underline;
+}
+
+.app-container .app-heading {
+    margin-top: 1.2rem;
+}
+
+.app-container .app-heading h1 {
+    color: #333;
+    font-weight: #777;
+}
+
+.app-container .app-heading-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-container .app-heading-buttons a {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #eee;
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.15);
+    padding: 0.8rem 0.6rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.app-container .app-heading-buttons a:hover {
+    transform: scale(1.01);
+}
+
+.app-container .app-heading-buttons a:active {
+    transform: scale(1);
+}
+
+.app-container .app-icon-container {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem auto;
+}
+
+.app-container .app-icon-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.app-container .gallery-container {
+}
+
+.app-container .gallery-container .row {
+    padding: 0 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.app-container .gallery-container .heading {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.app-container .gallery-container .heading span {
+    color: #222;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.app-container .gallery-container .row .img-item {
+    /* width: 20rem; */
+    height: 20rem;
+    margin: 0.5rem 0;
+    transition: all 0.25s ease-out;
+    border-radius: 0.5rem;
+    border: 0.005rem dashed dodgerblue;
+}
+
+.app-container .gallery-container .row .img-item.fullscreen-image {
+    width: 100%;
+    height: 100%;
+}
+
+.app-container .gallery-container .row .img-item:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0.3rem 0.3rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.app-container .gallery-container .row .img-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* For Extra small devices (portrait phones)*/
+@media (max-width: 575.98px) {
+}
+
+/* For small Devices (landscape phone)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* For medium Devices (tablets)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .app-container .app-heading h1 {
+        font-size: 2.5rem;
+    }
+    .app-container .app-icon-container {
+        width: 10rem;
+        height: 10rem;
+    }
+    .app-container .gallery-container .heading span {
+        font-size: 2rem;
+    }
+    .app-container .gallery-container .row {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+    .app-container .gallery-container .row .img-item {
+        width: 90%;
+        margin: 1rem auto;
+        height: 35rem;
+    }
+}
+
+/* For large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .app-container .app-heading h1 {
+        font-size: 2.5rem;
+    }
+    .app-container .app-icon-container {
+        width: 10rem;
+        height: 10rem;
+    }
+    .app-container .gallery-container .heading span {
+        font-size: 2rem;
+    }
+    .app-container .gallery-container .row {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+    .app-container .gallery-container .row .img-item {
+        width: 90%;
+        margin: 1rem auto;
+        height: 35rem;
+    }
+}
+
+/* For extra large Devices (large desktops) */
+@media (min-width: 1200px) {
+    .app-container .app-heading h1 {
+        font-size: 3rem;
+    }
+    .app-container .app-icon-container {
+        width: 10rem;
+        height: 10rem;
+    }
+    .app-container .gallery-container .heading span {
+        font-size: 2rem;
+    }
+    .app-container .gallery-container .row {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+    .app-container .gallery-container .row .img-item {
+        width: 90%;
+        margin: 1rem auto;
+        height: 35rem;
+    }
+}
